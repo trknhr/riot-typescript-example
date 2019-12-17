@@ -6,7 +6,7 @@ export function registerClass(
 ) {
     function registerTag(component: RiotComponentShell) {
         const clazz: any = element;
-		const instance = new clazz();
+        const instance = new clazz();
 
         const registered = register(
             component.name || "",
