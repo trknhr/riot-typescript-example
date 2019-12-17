@@ -1,0 +1,40 @@
+{
+  "name": "riot-typescript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --watch --hot --colors -d --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1984weed/riot-typescript-test.git"
+  },
+  "author": "nulab <developer@nulab-inc.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1984weed/riot-typescript-test/issues"
+  },
+  "homepage": "https://github.com/1984weed/riot-typescript-test#readme",
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@riotjs/compiler": "^4.3.11",
+    "@riotjs/hot-reload": "4.0.0",
+    "@riotjs/webpack-loader": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.4.0",
+    "eslint-config-riot": "^3.0.0",
+    "strip-indent": "^3.0.0",
+    "typescript": "3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "riot": "^4.5.0"
+  }
+}
