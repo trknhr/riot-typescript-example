@@ -10,37 +10,4 @@
   </h1>
 
   <logs logs={ state.logs } onclear={ clearLogs }></logs>
-
-  <script type="ts">
-    import Logs from '../logs/logs.riot'
-    import {RandomComponent} from './types'
-
-    function Random(): RandomComponent {
-      return {
-        state: {
-          number: null,
-          logs: []
-        },
-        generate(event: MouseEvent): void {
-          this.update({
-            number: Math.floor(Math.random() * 10000),
-            logs: this.state.logs.concat({
-              text: `Generate button clicked. Event type is ${event.type}`
-            })
-          })
-        },
-        clearLogs(): void {
-          this.update({
-            logs: []
-          })
-        }
-      }
-    }
-
-    Random.components = {
-      Logs
-    }
-
-    export default Random
-  </script>
 </random>

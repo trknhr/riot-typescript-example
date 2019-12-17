@@ -1,7 +1,8 @@
 import '@riotjs/hot-reload'
-import { component } from 'riot'
-import Random from './random/random.riot'
+import { mount } from 'riot'
 
-component(Random)(document.getElementById('app') || document.body, {
-    title: 'Hi there!',
-})
+const scripts = require.context("./", true, /^(?!.*\.d\.ts$).*\.ts$/);
+scripts.keys().forEach(scripts);
+
+mount("#app", {title: 'Hi there!'}, "random")
+

@@ -17,10 +17,7 @@
   },
   "homepage": "https://github.com/1984weed/riot-typescript-test#readme",
   "devDependencies": {
-    "@babel/core": "7.6.0",
-    "@babel/preset-env": "7.6.0",
-    "@babel/preset-typescript": "^7.6.0",
-    "@riotjs/compiler": "^4.3.11",
+    "@riotjs/compiler": "^4.5.4",
     "@riotjs/hot-reload": "4.0.0",
     "@riotjs/webpack-loader": "^4.0.1",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
@@ -29,10 +26,12 @@
     "eslint": "^6.4.0",
     "eslint-config-riot": "^3.0.0",
     "strip-indent": "^3.0.0",
+    "ts-loader": "^6.2.1",
     "typescript": "3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "@types/webpack-env": "^1.14.1"
   },
   "dependencies": {
     "riot": "^4.5.0"
